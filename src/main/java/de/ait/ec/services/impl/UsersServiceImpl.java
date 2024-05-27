@@ -38,7 +38,7 @@ public class UsersServiceImpl implements UsersService {
                 .email(newUser.getEmail())
                 .password(passwordEncoder.encode(newUser.getPassword()))
                // .password(newUser.getPassword())
-                .role(User.Role.USER)
+                .role(User.Role.ADMIN)
                 .build();
 
         usersRepository.save(user);

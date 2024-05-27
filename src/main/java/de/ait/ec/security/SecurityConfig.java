@@ -1,7 +1,9 @@
 package de.ait.ec.security;
 
+import de.ait.ec.models.User;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.web.SecurityFilterChain;
@@ -17,6 +19,10 @@ public class SecurityConfig {
              //   .anyRequest().permitAll());
              //     .anyRequest().authenticated());
                 .requestMatchers("/api/users/register/**").permitAll()
+                .requestMatchers(HttpMethod.POST,"/api/courses/**").hasRole(User.Role.ADMIN.toString())
+                .requestMatchers(HttpMethod.PUT,"/api/courses/{course-id}").hasRole(User.Role.ADMIN.toString())
+                .requestMatchers(HttpMethod.DELETE,"/api/courses/{course-id}").hasRole(User.Role.ADMIN.toString())
+                .requestMatchers(HttpMethod.GET,"/hello").permitAll()
                 .anyRequest().authenticated());
 
 
