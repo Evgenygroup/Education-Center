@@ -1,4 +1,4 @@
-package de.ait.ec.services;
+package de.ait.ec.service;
 
 import de.ait.ec.dto.*;
 

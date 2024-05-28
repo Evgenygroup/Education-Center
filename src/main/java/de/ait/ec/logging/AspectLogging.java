@@ -16,8 +16,8 @@ public class AspectLogging {
     private Logger logger = LoggerFactory.getLogger(AspectLogging.class);// чтобы логгер понимал
                                                                                 // в каком классе включено логирование
 
-    @Pointcut("execution(* de.ait.ec.services.impl.CoursesServiceImpl.addCourse(de.ait.ec.dto.NewCourseDto))")
-   // @Pointcut("execution(* de.ait.ec.services.impl.CoursesServiceImpl.addCourse(..))")
+    @Pointcut("execution(* de.ait.ec.service.impl.CoursesServiceImpl.addCourse(de.ait.ec.dto.NewCourseDto))")
+   // @Pointcut("execution(* de.ait.ec.service.impl.CoursesServiceImpl.addCourse(..))")
     public void saveCourse(){}
 
 
@@ -37,7 +37,7 @@ public class AspectLogging {
         logger.info("Method addCourse of the class CoursesServiceImpl finished its work ");
     }
 
-    @Pointcut("execution(* de.ait.ec.services.impl.CoursesServiceImpl.getCourse(..))")
+    @Pointcut("execution(* de.ait.ec.service.impl.CoursesServiceImpl.getCourse(..))")
     public void getCourseById(){}
 
     // advice

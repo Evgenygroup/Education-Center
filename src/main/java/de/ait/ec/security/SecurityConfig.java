@@ -1,6 +1,6 @@
 package de.ait.ec.security;
 
-import de.ait.ec.models.User;
+import de.ait.ec.model.User;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;

@@ -1,7 +1,7 @@
-package de.ait.ec.controllers;
+package de.ait.ec.controller;
 
 import de.ait.ec.dto.*;
-import de.ait.ec.services.CoursesService;
+import de.ait.ec.service.CoursesService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

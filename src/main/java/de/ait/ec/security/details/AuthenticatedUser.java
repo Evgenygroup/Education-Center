@@ -1,14 +1,12 @@
 package de.ait.ec.security.details;
 
-import de.ait.ec.models.User;
+import de.ait.ec.model.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
-import java.util.List;
 
 public class AuthenticatedUser implements UserDetails {
 

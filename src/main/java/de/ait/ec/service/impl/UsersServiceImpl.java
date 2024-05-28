@@ -1,14 +1,13 @@
-package de.ait.ec.services.impl;
+package de.ait.ec.service.impl;
 
 import de.ait.ec.dto.NewUserDto;
 import de.ait.ec.dto.UserDto;
 import de.ait.ec.exceptions.RestException;
-import de.ait.ec.models.User;
-import de.ait.ec.repositories.UsersRepository;
-import de.ait.ec.services.UsersService;
+import de.ait.ec.model.User;
+import de.ait.ec.repository.UsersRepository;
+import de.ait.ec.service.UsersService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import org.springframework.security.crypto.password.PasswordEncoder;

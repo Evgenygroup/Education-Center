@@ -1,6 +1,6 @@
 package de.ait.ec.dto;
 
-import de.ait.ec.models.Lesson;
+import de.ait.ec.model.Lesson;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

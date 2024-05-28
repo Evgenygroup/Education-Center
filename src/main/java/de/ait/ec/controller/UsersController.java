@@ -1,8 +1,8 @@
-package de.ait.ec.controllers;
+package de.ait.ec.controller;
 
 import de.ait.ec.dto.NewUserDto;
 import de.ait.ec.dto.UserDto;
-import de.ait.ec.services.UsersService;
+import de.ait.ec.service.UsersService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

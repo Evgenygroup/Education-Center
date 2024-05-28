@@ -1,14 +1,12 @@
 package de.ait.ec.security.details;
 
-import de.ait.ec.models.User;
-import de.ait.ec.repositories.UsersRepository;
+import de.ait.ec.model.User;
+import de.ait.ec.repository.UsersRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor

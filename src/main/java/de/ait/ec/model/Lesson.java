@@ -1,4 +1,4 @@
-package de.ait.ec.models;
+package de.ait.ec.model;
 
 import jakarta.persistence.*;
 import lombok.*;

@@ -1,12 +1,12 @@
-package de.ait.ec.services.impl;
+package de.ait.ec.service.impl;
 
 import de.ait.ec.dto.*;
 import de.ait.ec.exceptions.RestException;
-import de.ait.ec.models.Course;
-import de.ait.ec.models.Lesson;
-import de.ait.ec.repositories.CoursesRepository;
-import de.ait.ec.repositories.LessonsRepository;
-import de.ait.ec.services.CoursesService;
+import de.ait.ec.model.Course;
+import de.ait.ec.model.Lesson;
+import de.ait.ec.repository.CoursesRepository;
+import de.ait.ec.repository.LessonsRepository;
+import de.ait.ec.service.CoursesService;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
