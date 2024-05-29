@@ -4,8 +4,10 @@ import de.ait.ec.dto.*;
 import de.ait.ec.exceptions.RestException;
 import de.ait.ec.model.Course;
 import de.ait.ec.model.Lesson;
+import de.ait.ec.model.User;
 import de.ait.ec.repository.CoursesRepository;
 import de.ait.ec.repository.LessonsRepository;
+import de.ait.ec.repository.UsersRepository;
 import de.ait.ec.service.CoursesService;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
@@ -21,6 +23,7 @@ import java.util.Set;
 
 import static de.ait.ec.dto.CourseDto.from;
 import static de.ait.ec.dto.LessonDto.from;
+import static de.ait.ec.dto.UserDto.from;
 
 @RequiredArgsConstructor
 @Service
@@ -31,6 +34,8 @@ public class CoursesServiceImpl implements CoursesService {
     private final CoursesRepository coursesRepository;
 
     private final LessonsRepository lessonsRepository;
+
+    private final UsersRepository studentRepository;
     @Override
     public CourseDto addCourse(NewCourseDto newCourse) {
 
@@ -103,17 +108,26 @@ public class CoursesServiceImpl implements CoursesService {
         // находим курс, в который хотим добавить урок
         Course course = getCourseOrThrow(courseId);
 
+        Lesson lesson;
+
         // создаем урок, который нужно будет сохранить в базе
 
-        Lesson lesson = Lesson.builder()
-                .name(newLesson.getName())
-                .dayOfWeek(DayOfWeek.valueOf(newLesson.getDayOfWeek()))
-                .startTime(LocalTime.parse(newLesson.getStartTime()))
-                .finishTime(LocalTime.parse(newLesson.getFinishTime()))
-                .course(course) // проставляем, к какому курсу привязан урок
-                .build();
-
-        lessonsRepository.save(lesson); //  сохраняем урок
+        if(newLesson.getExistsLessonId() == null) { // если id существующего урока не указан
+            // создадим урок, который затем сохраним в бд
+            lesson = Lesson.builder()
+                    .name(newLesson.getName())
+                    .dayOfWeek(DayOfWeek.valueOf(newLesson.getDayOfWeek()))
+                    .startTime(LocalTime.parse(newLesson.getStartTime()))
+                    .finishTime(LocalTime.parse(newLesson.getFinishTime()))
+                    .course(course) // проставляем, к какому курсу привязан урок
+                    .build();
+        } else { // если , был указан id  существующего урока
+            lesson = lessonsRepository.findById(newLesson.getExistsLessonId())
+                    .orElseThrow(() -> new RestException(HttpStatus.NOT_FOUND,
+                    "Lesson with id <" + newLesson.getExistsLessonId() + "> not found "));
+            lesson.setCourse(course); //  проставили курс ему
+        }
+        lessonsRepository.save(lesson); //  сохраняем/обновляем существующий  урок
 
 
         return from(lesson);
@@ -130,6 +144,76 @@ public class CoursesServiceImpl implements CoursesService {
         // конвертируем в DTO
         return from(lessons);
     }
+
+    @Override
+    public LessonDto deleteLessonFromCourse(Long courseId, Long lessonId) {
+        //2 вариант
+        Course course = getCourseOrThrow(courseId);
+
+        Lesson lesson = lessonsRepository.findByCourseAndId(course,lessonId)
+                .orElseThrow(() -> new RestException(HttpStatus.NOT_FOUND,
+                        "Lesson with id <" + lessonId + "> not found in course with id <" + courseId + ">"));
+        lesson.setCourse(null);
+        lessonsRepository.save(lesson);
+        return from(lesson);
+
+        // 1 вариант
+     /*   Course course = getCourseOrThrow(courseId);
+        Set<Lesson> lessonsOfCourse = course.getLessons(); // получили все уроки нужного курса
+
+        // нужно в этом списке найти урок, который мы хотим удалить
+
+        for (Lesson lesson: lessonsOfCourse) { //  обходим все уроки этого курса
+            if (lesson.getId().equals(lessonId)) { //  если у урока ID  совпадает с искомым ID урока
+                lesson.setCourse(null); //  делаем ссылку у этого урока на курс null
+                lessonsRepository.save(lesson);// сохраняем заново урок в бд
+                return from(lesson);
+            }
+        }
+            //  мы попадем сюда только если такого урока у курса нет
+            throw new RestException(HttpStatus.NOT_FOUND,
+                    "Lesson with id <" + lessonId + "> not found in course with id <" + courseId + ">");
+        */
+        }
+
+    @Override
+    public LessonDto updateLessonInCourse(Long courseId, Long lessonId, UpdateLessonDto updateLesson) {
+        Course course = getCourseOrThrow(courseId);
+        Lesson lesson = lessonsRepository.findByCourseAndId(course,lessonId)
+                .orElseThrow(() -> new RestException(HttpStatus.NOT_FOUND,
+                        "Lesson with id <" + lessonId + "> not found in course with id <" + courseId + ">"));
+        lesson.setName(updateLesson.getName());
+        lesson.setStartTime(LocalTime.parse(updateLesson.getStartTime()));
+        lesson.setFinishTime(LocalTime.parse(updateLesson.getFinishTime()));
+        lesson.setDayOfWeek(DayOfWeek.valueOf(updateLesson.getDayOfWeek()));
+
+        lessonsRepository.save(lesson);
+
+        return from(lesson);
+    }
+
+    @Override
+    public List<UserDto> addStudentToCourse(Long courseId, StudentToCourseDto studentData) {
+        Course course = getCourseOrThrow(courseId);
+        User student =  studentRepository.findById(studentData.getUserId())
+                .orElseThrow(()-> new RestException(HttpStatus.NOT_FOUND,
+                        "User with id <" +studentData.getUserId() + ">not found"));
+
+        // не рабочий вариант
+    //    course.getStudents().add(student);
+    //    coursesRepository.save(course);
+
+        if( !student.getCourses().add(course)){
+            throw new RestException(HttpStatus.BAD_REQUEST, "User with id <" +
+                    student.getId() + ">already present in course with id <" +course.getId() +">");
+        }
+
+        studentRepository.save(student);
+        Set<User> studentsOfCourse = studentRepository.findAllByCoursesContainsOrderById(course);
+
+        return from(studentsOfCourse);
+    }
+
 
     private Course getCourseOrThrow(Long courseId){
         return coursesRepository.findById(courseId)

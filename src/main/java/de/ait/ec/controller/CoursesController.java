@@ -75,6 +75,40 @@ public class CoursesController {
                 .ok(coursesService.getLessonsOfCourse(courseId));
     }
 
+    // end-point  для удаления урока из курса
+    // DELETE /api/courses/{course-id}/lessons/{lesson-id}
+
+    @DeleteMapping("/{course-id}/lessons/{lesson-id}")
+    public ResponseEntity<LessonDto> deleteLessonFromCourse(@PathVariable("course-id") Long courseId,
+                                                            @PathVariable("lesson-id") Long lessonId){
+        return ResponseEntity
+                .ok(coursesService.deleteLessonFromCourse(courseId,lessonId));
+    }
+
+    // end-point для обновления урока( через курс)
+    // PUT /api/courses/{course-id}/lessons/{lesson-id}
+    @PutMapping("/{course-id}/lessons/{lesson-id}")
+    public ResponseEntity<LessonDto>updateLessonInCourse(@PathVariable("course-id") Long courseId,
+                                                         @PathVariable("lesson-id") Long lessonId,
+                                                         @RequestBody @Valid UpdateLessonDto updateLesson){
+        return ResponseEntity
+                .ok(coursesService.updateLessonInCourse(courseId,lessonId,updateLesson));
+    }
+
+    // -- students
+    // POST /api/courses/{course-id}/students
+
+    @PostMapping("/{course-id}/students")
+    public ResponseEntity<List<UserDto>> addStudentToCourse(@PathVariable("course-id") Long courseId,
+                                                            @RequestBody StudentToCourseDto studentData){
+        return ResponseEntity.status(HttpStatus.CREATED)
+                .body(coursesService.addStudentToCourse(courseId,studentData));
+    }
+
+
+
+
+
 
 
 

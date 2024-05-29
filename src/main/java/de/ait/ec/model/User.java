@@ -1,10 +1,7 @@
 package de.ait.ec.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.Set;
 
@@ -13,6 +10,7 @@ import java.util.Set;
 @NoArgsConstructor
 @Builder
 @Entity
+@EqualsAndHashCode(exclude = "courses")
 @Table(name = "account")
 public class User {
 

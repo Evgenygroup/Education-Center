@@ -26,3 +26,333 @@
 2024-05-29T18:53:13.849+02:00  INFO 16712 --- [education-centre] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-05-29T18:53:13.853+02:00  INFO 16712 --- [education-centre] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-05-29T18:53:13.862+02:00  INFO 16712 --- [education-centre] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-29T20:25:48.955+02:00  INFO 28032 --- [education-centre] [main] de.ait.ec.EducationCentreApplication     : Starting EducationCentreApplication using Java 17.0.5 with PID 28032 (C:\Users\EvgenyJava\JavaProjects\education-centre\target\classes started by mailf in C:\Users\EvgenyJava\JavaProjects\education-centre)
+2024-05-29T20:25:48.957+02:00  INFO 28032 --- [education-centre] [main] de.ait.ec.EducationCentreApplication     : The following 1 profile is active: "dev"
+2024-05-29T20:25:49.777+02:00  INFO 28032 --- [education-centre] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-29T20:25:49.853+02:00  INFO 28032 --- [education-centre] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 3 JPA repository interfaces.
+2024-05-29T20:25:50.586+02:00  INFO 28032 --- [education-centre] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-29T20:25:50.595+02:00  INFO 28032 --- [education-centre] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-29T20:25:50.596+02:00  INFO 28032 --- [education-centre] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-29T20:25:50.673+02:00  INFO 28032 --- [education-centre] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-29T20:25:50.675+02:00  INFO 28032 --- [education-centre] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1663 ms
+2024-05-29T20:25:50.866+02:00  INFO 28032 --- [education-centre] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-29T20:25:50.924+02:00  INFO 28032 --- [education-centre] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-29T20:25:50.963+02:00  INFO 28032 --- [education-centre] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-29T20:25:51.225+02:00  INFO 28032 --- [education-centre] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-29T20:25:51.258+02:00  INFO 28032 --- [education-centre] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-29T20:25:51.491+02:00  INFO 28032 --- [education-centre] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3d3930fe
+2024-05-29T20:25:51.493+02:00  INFO 28032 --- [education-centre] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-29T20:25:52.938+02:00  INFO 28032 --- [education-centre] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-29T20:25:53.044+02:00  INFO 28032 --- [education-centre] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-29T20:25:53.461+02:00  WARN 28032 --- [education-centre] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-29T20:25:53.794+02:00  INFO 28032 --- [education-centre] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1e084a26, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@31c31fa6, org.springframework.security.web.context.SecurityContextHolderFilter@2ded31cc, org.springframework.security.web.header.HeaderWriterFilter@73db1a6, org.springframework.web.filter.CorsFilter@70ebaa1e, org.springframework.security.web.authentication.logout.LogoutFilter@7f69c4c0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@31beb0d0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6fb2b972, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5fa3df, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3d5e3f58, org.springframework.security.web.access.ExceptionTranslationFilter@678b3746, org.springframework.security.web.access.intercept.AuthorizationFilter@1dbb9a4a]
+2024-05-29T20:25:54.120+02:00  INFO 28032 --- [education-centre] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-29T20:25:54.133+02:00  INFO 28032 --- [education-centre] [main] de.ait.ec.EducationCentreApplication     : Started EducationCentreApplication in 5.765 seconds (process running for 6.525)
+2024-05-29T20:29:14.995+02:00  INFO 28032 --- [education-centre] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-29T20:29:14.998+02:00  INFO 28032 --- [education-centre] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-29T20:29:15.029+02:00  INFO 28032 --- [education-centre] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-29T20:29:24.635+02:00  INFO 26404 --- [education-centre] [main] de.ait.ec.EducationCentreApplication     : Starting EducationCentreApplication using Java 17.0.5 with PID 26404 (C:\Users\EvgenyJava\JavaProjects\education-centre\target\classes started by mailf in C:\Users\EvgenyJava\JavaProjects\education-centre)
+2024-05-29T20:29:24.650+02:00  INFO 26404 --- [education-centre] [main] de.ait.ec.EducationCentreApplication     : The following 1 profile is active: "dev"
+2024-05-29T20:29:25.490+02:00  INFO 26404 --- [education-centre] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-29T20:29:25.577+02:00  INFO 26404 --- [education-centre] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 3 JPA repository interfaces.
+2024-05-29T20:29:26.312+02:00  INFO 26404 --- [education-centre] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-29T20:29:26.330+02:00  INFO 26404 --- [education-centre] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-29T20:29:26.331+02:00  INFO 26404 --- [education-centre] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-29T20:29:26.391+02:00  INFO 26404 --- [education-centre] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-29T20:29:26.391+02:00  INFO 26404 --- [education-centre] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1688 ms
+2024-05-29T20:29:26.589+02:00  INFO 26404 --- [education-centre] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-29T20:29:26.671+02:00  INFO 26404 --- [education-centre] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-29T20:29:26.716+02:00  INFO 26404 --- [education-centre] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-29T20:29:27.013+02:00  INFO 26404 --- [education-centre] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-29T20:29:27.045+02:00  INFO 26404 --- [education-centre] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-29T20:29:27.258+02:00  INFO 26404 --- [education-centre] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@52b30054
+2024-05-29T20:29:27.260+02:00  INFO 26404 --- [education-centre] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-29T20:29:29.015+02:00  INFO 26404 --- [education-centre] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-29T20:29:29.144+02:00  INFO 26404 --- [education-centre] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-29T20:29:29.663+02:00  WARN 26404 --- [education-centre] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-29T20:29:30.064+02:00  INFO 26404 --- [education-centre] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@78a0d664, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1237aa73, org.springframework.security.web.context.SecurityContextHolderFilter@45689582, org.springframework.security.web.header.HeaderWriterFilter@174aabb2, org.springframework.web.filter.CorsFilter@1dbb9a4a, org.springframework.security.web.authentication.logout.LogoutFilter@4cff38ff, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@492a220e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@12a7515b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c28654e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@60e5b3a8, org.springframework.security.web.access.ExceptionTranslationFilter@7a05cdc8, org.springframework.security.web.access.intercept.AuthorizationFilter@4509414e]
+2024-05-29T20:29:30.518+02:00  INFO 26404 --- [education-centre] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-29T20:29:30.540+02:00  INFO 26404 --- [education-centre] [main] de.ait.ec.EducationCentreApplication     : Started EducationCentreApplication in 6.473 seconds (process running for 7.525)
+2024-05-29T20:31:14.204+02:00  INFO 26404 --- [education-centre] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-29T20:31:14.209+02:00  INFO 26404 --- [education-centre] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-29T20:31:14.218+02:00  INFO 26404 --- [education-centre] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2024-05-29T20:47:39.052+02:00  INFO 26404 --- [education-centre] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-29T20:47:39.055+02:00  INFO 26404 --- [education-centre] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-29T20:47:39.060+02:00  INFO 26404 --- [education-centre] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-29T20:47:49.116+02:00  INFO 11804 --- [education-centre] [main] de.ait.ec.EducationCentreApplication     : Starting EducationCentreApplication using Java 17.0.5 with PID 11804 (C:\Users\EvgenyJava\JavaProjects\education-centre\target\classes started by mailf in C:\Users\EvgenyJava\JavaProjects\education-centre)
+2024-05-29T20:47:49.123+02:00  INFO 11804 --- [education-centre] [main] de.ait.ec.EducationCentreApplication     : The following 1 profile is active: "dev"
+2024-05-29T20:47:50.015+02:00  INFO 11804 --- [education-centre] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-29T20:47:50.098+02:00  INFO 11804 --- [education-centre] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 3 JPA repository interfaces.
+2024-05-29T20:47:50.868+02:00  INFO 11804 --- [education-centre] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-29T20:47:50.887+02:00  INFO 11804 --- [education-centre] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-29T20:47:50.888+02:00  INFO 11804 --- [education-centre] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-29T20:47:50.971+02:00  INFO 11804 --- [education-centre] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-29T20:47:50.972+02:00  INFO 11804 --- [education-centre] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1796 ms
+2024-05-29T20:47:51.189+02:00  INFO 11804 --- [education-centre] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-29T20:47:51.261+02:00  INFO 11804 --- [education-centre] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-29T20:47:51.309+02:00  INFO 11804 --- [education-centre] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-29T20:47:51.620+02:00  INFO 11804 --- [education-centre] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-29T20:47:51.661+02:00  INFO 11804 --- [education-centre] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-29T20:47:51.897+02:00  INFO 11804 --- [education-centre] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7f6b57f2
+2024-05-29T20:47:51.898+02:00  INFO 11804 --- [education-centre] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-29T20:47:53.512+02:00  INFO 11804 --- [education-centre] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-29T20:47:53.641+02:00  INFO 11804 --- [education-centre] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-29T20:47:54.003+02:00  WARN 11804 --- [education-centre] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-29T20:47:54.290+02:00  INFO 11804 --- [education-centre] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@38d9c9c4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@a4388f1, org.springframework.security.web.context.SecurityContextHolderFilter@562ec518, org.springframework.security.web.header.HeaderWriterFilter@4199761d, org.springframework.web.filter.CorsFilter@3687b83c, org.springframework.security.web.authentication.logout.LogoutFilter@20040c6e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1dbb9a4a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b1ad751, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4d0e6424, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4cbd17b3, org.springframework.security.web.access.ExceptionTranslationFilter@44f88149, org.springframework.security.web.access.intercept.AuthorizationFilter@29b2a94c]
+2024-05-29T20:47:54.591+02:00  INFO 11804 --- [education-centre] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-29T20:47:54.602+02:00  INFO 11804 --- [education-centre] [main] de.ait.ec.EducationCentreApplication     : Started EducationCentreApplication in 6.08 seconds (process running for 6.874)
+2024-05-29T20:48:08.214+02:00  INFO 11804 --- [education-centre] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-29T20:48:08.215+02:00  INFO 11804 --- [education-centre] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-29T20:48:08.218+02:00  INFO 11804 --- [education-centre] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-05-29T21:17:25.070+02:00  INFO 11804 --- [education-centre] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-29T21:17:25.073+02:00  INFO 11804 --- [education-centre] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-29T21:17:25.076+02:00  INFO 11804 --- [education-centre] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-29T21:17:34.687+02:00  INFO 14496 --- [education-centre] [main] de.ait.ec.EducationCentreApplication     : Starting EducationCentreApplication using Java 17.0.5 with PID 14496 (C:\Users\EvgenyJava\JavaProjects\education-centre\target\classes started by mailf in C:\Users\EvgenyJava\JavaProjects\education-centre)
+2024-05-29T21:17:34.690+02:00  INFO 14496 --- [education-centre] [main] de.ait.ec.EducationCentreApplication     : The following 1 profile is active: "dev"
+2024-05-29T21:17:35.547+02:00  INFO 14496 --- [education-centre] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-29T21:17:35.620+02:00  INFO 14496 --- [education-centre] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 3 JPA repository interfaces.
+2024-05-29T21:17:36.355+02:00  INFO 14496 --- [education-centre] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-29T21:17:36.365+02:00  INFO 14496 --- [education-centre] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-29T21:17:36.365+02:00  INFO 14496 --- [education-centre] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-29T21:17:36.441+02:00  INFO 14496 --- [education-centre] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-29T21:17:36.442+02:00  INFO 14496 --- [education-centre] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1693 ms
+2024-05-29T21:17:36.639+02:00  INFO 14496 --- [education-centre] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-29T21:17:36.705+02:00  INFO 14496 --- [education-centre] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-29T21:17:36.746+02:00  INFO 14496 --- [education-centre] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-29T21:17:37.012+02:00  INFO 14496 --- [education-centre] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-29T21:17:37.038+02:00  INFO 14496 --- [education-centre] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-29T21:17:37.250+02:00  INFO 14496 --- [education-centre] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@382faf51
+2024-05-29T21:17:37.251+02:00  INFO 14496 --- [education-centre] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-29T21:17:38.722+02:00  INFO 14496 --- [education-centre] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-29T21:17:38.825+02:00  INFO 14496 --- [education-centre] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-29T21:17:39.258+02:00  WARN 14496 --- [education-centre] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-29T21:17:39.597+02:00  INFO 14496 --- [education-centre] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5a2297d7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52e34db, org.springframework.security.web.context.SecurityContextHolderFilter@570ede3b, org.springframework.security.web.header.HeaderWriterFilter@5a5024eb, org.springframework.web.filter.CorsFilter@39d37da8, org.springframework.security.web.authentication.logout.LogoutFilter@715d82a0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@65dafe50, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25630ede, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@399acce3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@554a2f3, org.springframework.security.web.access.ExceptionTranslationFilter@4d0e6424, org.springframework.security.web.access.intercept.AuthorizationFilter@2703785e]
+2024-05-29T21:17:39.939+02:00  INFO 14496 --- [education-centre] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-29T21:17:39.946+02:00  INFO 14496 --- [education-centre] [main] de.ait.ec.EducationCentreApplication     : Started EducationCentreApplication in 5.807 seconds (process running for 6.554)
+2024-05-29T21:22:10.223+02:00  INFO 14496 --- [education-centre] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-29T21:22:10.224+02:00  INFO 14496 --- [education-centre] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-29T21:22:10.227+02:00  INFO 14496 --- [education-centre] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-05-29T22:26:39.048+02:00  INFO 14496 --- [education-centre] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-29T22:26:39.062+02:00  INFO 14496 --- [education-centre] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-29T22:26:39.067+02:00  INFO 14496 --- [education-centre] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-29T22:26:46.454+02:00  INFO 28624 --- [education-centre] [main] de.ait.ec.EducationCentreApplication     : Starting EducationCentreApplication using Java 17.0.5 with PID 28624 (C:\Users\EvgenyJava\JavaProjects\education-centre\target\classes started by mailf in C:\Users\EvgenyJava\JavaProjects\education-centre)
+2024-05-29T22:26:46.456+02:00  INFO 28624 --- [education-centre] [main] de.ait.ec.EducationCentreApplication     : The following 1 profile is active: "dev"
+2024-05-29T22:26:47.003+02:00  INFO 28624 --- [education-centre] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-29T22:26:47.057+02:00  INFO 28624 --- [education-centre] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 3 JPA repository interfaces.
+2024-05-29T22:26:47.531+02:00  INFO 28624 --- [education-centre] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-29T22:26:47.540+02:00  INFO 28624 --- [education-centre] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-29T22:26:47.540+02:00  INFO 28624 --- [education-centre] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-29T22:26:47.587+02:00  INFO 28624 --- [education-centre] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-29T22:26:47.587+02:00  INFO 28624 --- [education-centre] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1093 ms
+2024-05-29T22:26:47.714+02:00  INFO 28624 --- [education-centre] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-29T22:26:47.758+02:00  INFO 28624 --- [education-centre] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-29T22:26:47.785+02:00  INFO 28624 --- [education-centre] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-29T22:26:48.012+02:00  INFO 28624 --- [education-centre] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-29T22:26:48.039+02:00  INFO 28624 --- [education-centre] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-29T22:26:48.260+02:00  INFO 28624 --- [education-centre] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@52909a97
+2024-05-29T22:26:48.261+02:00  INFO 28624 --- [education-centre] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-29T22:26:49.233+02:00  INFO 28624 --- [education-centre] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-29T22:26:49.326+02:00  INFO 28624 --- [education-centre] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-29T22:26:49.661+02:00  WARN 28624 --- [education-centre] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-29T22:26:49.887+02:00  INFO 28624 --- [education-centre] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3453f79c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6f627a1a, org.springframework.security.web.context.SecurityContextHolderFilter@9da386c, org.springframework.security.web.header.HeaderWriterFilter@396f3bf2, org.springframework.web.filter.CorsFilter@655b9169, org.springframework.security.web.authentication.logout.LogoutFilter@4b8601a1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2ac0cb64, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f5fb335, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@715d82a0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4917992b, org.springframework.security.web.access.ExceptionTranslationFilter@20040c6e, org.springframework.security.web.access.intercept.AuthorizationFilter@4619854a]
+2024-05-29T22:26:50.095+02:00  INFO 28624 --- [education-centre] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-29T22:26:50.104+02:00  INFO 28624 --- [education-centre] [main] de.ait.ec.EducationCentreApplication     : Started EducationCentreApplication in 4.003 seconds (process running for 4.495)
+2024-05-29T22:27:56.783+02:00  INFO 28624 --- [education-centre] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-29T22:27:56.785+02:00  INFO 28624 --- [education-centre] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-29T22:27:56.787+02:00  INFO 28624 --- [education-centre] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-05-29T22:29:18.579+02:00  WARN 28624 --- [education-centre] [http-nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2024-05-29T22:29:18.580+02:00 ERROR 28624 --- [education-centre] [http-nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "student_course_pkey"
+  Detail: Key (student_id, course_id)=(2, 1) already exists.
+2024-05-29T22:29:18.594+02:00 ERROR 28624 --- [education-centre] [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [ERROR: duplicate key value violates unique constraint "student_course_pkey"
+  Detail: Key (student_id, course_id)=(2, 1) already exists.] [insert into student_course (student_id,course_id) values (?,?)]; SQL [insert into student_course (student_id,course_id) values (?,?)]; constraint [student_course_pkey]] with root cause
+
+org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "student_course_pkey"
+  Detail: Key (student_id, course_id)=(2, 1) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.2.jar:42.6.2]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:194) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.performNonBatchedMutation(AbstractMutationExecutor.java:108) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:40) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:52) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.persister.collection.mutation.InsertRowsCoordinatorStandard.insertRows(InsertRowsCoordinatorStandard.java:117) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.persister.collection.BasicCollectionPersister.insertRows(BasicCollectionPersister.java:125) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.action.internal.CollectionUpdateAction.execute(CollectionUpdateAction.java:86) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:632) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:499) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:363) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:41) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1403) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:484) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2319) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1976) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:169) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:267) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562) ~[spring-orm-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:794) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:757) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:676) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:426) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:164) ~[spring-data-jpa-3.2.5.jar:3.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.1.6.jar:6.1.6]
+	at jdk.proxy2/jdk.proxy2.$Proxy138.save(Unknown Source) ~[na:na]
+	at de.ait.ec.service.impl.CoursesServiceImpl.addStudentToCourse(CoursesServiceImpl.java:211) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.6.jar:6.1.6]
+	at de.ait.ec.service.impl.CoursesServiceImpl$$SpringCGLIB$$0.addStudentToCourse(<generated>) ~[classes/:na]
+	at de.ait.ec.controller.CoursesController.addStudentToCourse(CoursesController.java:105) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:213) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-05-29T22:31:43.455+02:00  INFO 28624 --- [education-centre] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-29T22:31:43.457+02:00  INFO 28624 --- [education-centre] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-29T22:31:43.461+02:00  INFO 28624 --- [education-centre] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-29T22:31:49.869+02:00  INFO 23368 --- [education-centre] [main] de.ait.ec.EducationCentreApplication     : Starting EducationCentreApplication using Java 17.0.5 with PID 23368 (C:\Users\EvgenyJava\JavaProjects\education-centre\target\classes started by mailf in C:\Users\EvgenyJava\JavaProjects\education-centre)
+2024-05-29T22:31:49.871+02:00  INFO 23368 --- [education-centre] [main] de.ait.ec.EducationCentreApplication     : The following 1 profile is active: "dev"
+2024-05-29T22:31:50.381+02:00  INFO 23368 --- [education-centre] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-29T22:31:50.432+02:00  INFO 23368 --- [education-centre] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 3 JPA repository interfaces.
+2024-05-29T22:31:50.890+02:00  INFO 23368 --- [education-centre] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-29T22:31:50.898+02:00  INFO 23368 --- [education-centre] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-29T22:31:50.898+02:00  INFO 23368 --- [education-centre] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-29T22:31:50.942+02:00  INFO 23368 --- [education-centre] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-29T22:31:50.943+02:00  INFO 23368 --- [education-centre] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1037 ms
+2024-05-29T22:31:51.065+02:00  INFO 23368 --- [education-centre] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-29T22:31:51.110+02:00  INFO 23368 --- [education-centre] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-29T22:31:51.138+02:00  INFO 23368 --- [education-centre] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-29T22:31:51.321+02:00  INFO 23368 --- [education-centre] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-29T22:31:51.341+02:00  INFO 23368 --- [education-centre] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-29T22:31:51.503+02:00  INFO 23368 --- [education-centre] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@697a92af
+2024-05-29T22:31:51.504+02:00  INFO 23368 --- [education-centre] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-29T22:31:52.564+02:00  INFO 23368 --- [education-centre] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-29T22:31:52.655+02:00  INFO 23368 --- [education-centre] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-29T22:31:52.976+02:00  WARN 23368 --- [education-centre] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-29T22:31:53.194+02:00  INFO 23368 --- [education-centre] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@73d7e7aa, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@349686e8, org.springframework.security.web.context.SecurityContextHolderFilter@186e254, org.springframework.security.web.header.HeaderWriterFilter@135f160e, org.springframework.web.filter.CorsFilter@5c3e7128, org.springframework.security.web.authentication.logout.LogoutFilter@1e084a26, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@39d37da8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@39ee07a9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4cff38ff, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5ce03a9d, org.springframework.security.web.access.ExceptionTranslationFilter@6956081d, org.springframework.security.web.access.intercept.AuthorizationFilter@118f39f3]
+2024-05-29T22:31:53.403+02:00  INFO 23368 --- [education-centre] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-29T22:31:53.412+02:00  INFO 23368 --- [education-centre] [main] de.ait.ec.EducationCentreApplication     : Started EducationCentreApplication in 3.883 seconds (process running for 4.337)
+2024-05-29T22:32:12.791+02:00  INFO 23368 --- [education-centre] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-29T22:32:12.791+02:00  INFO 23368 --- [education-centre] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-29T22:32:12.794+02:00  INFO 23368 --- [education-centre] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-05-29T22:33:51.765+02:00  INFO 23368 --- [education-centre] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-29T22:33:51.769+02:00  INFO 23368 --- [education-centre] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-29T22:33:51.772+02:00  INFO 23368 --- [education-centre] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

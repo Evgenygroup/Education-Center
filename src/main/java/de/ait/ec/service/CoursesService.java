@@ -19,4 +19,12 @@ public interface CoursesService {
     LessonDto addLessonToCourse(Long courseId, NewLessonDto newLesson);
 
     List<LessonDto> getLessonsOfCourse(Long courseId);
+
+    LessonDto deleteLessonFromCourse(Long courseId, Long lessonId);
+
+    LessonDto updateLessonInCourse(Long courseId, Long lessonId, UpdateLessonDto updateLesson);
+
+
+
+    List<UserDto> addStudentToCourse(Long courseId, StudentToCourseDto studentData);
 }

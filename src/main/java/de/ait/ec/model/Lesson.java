@@ -26,6 +26,6 @@ public class Lesson {
     private DayOfWeek dayOfWeek;
 
     @ManyToOne
-    @JoinColumn(name = "course_id",nullable = false)
+    @JoinColumn(name = "course_id")
     private Course course;
 }
